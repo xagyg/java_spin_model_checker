@@ -1,0 +1,25 @@
+/*****************************************************
+ * define NUM_LOCKS in component-under-test model file 
+ *****************************************************/
+
+#include "java.model"
+
+inline synchronized(obj) {
+    _synchronized(obj);
+}
+
+inline exit_synchronized(obj) {
+    _exit_synchronized(obj);
+}
+
+inline wait(obj) {
+    _wait(obj);
+}
+
+inline notify(obj) {
+    _notify(obj);
+}
+
+inline notifyAll(obj) {
+    _notifyAll(obj);
+}
